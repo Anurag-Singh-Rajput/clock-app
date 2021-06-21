@@ -55,7 +55,8 @@ body {
   width: 10px;
   position: absolute;
   background-color: black;
-  /* z-index: 1000; */
+  border-radius: 40% 40% 0 0;
+  box-shadow: 1px 1px 5px rgb(20, 20, 20);
 }
 
 .min::before {
@@ -65,15 +66,17 @@ body {
   position: absolute;
   bottom: 80px;
   background-color: #131516;
-  /* z-index: 1000; */
+  border-radius: 35% 35% 0 0;
+  box-shadow: 1px 1px 5px rgb(20, 20, 20);
 }
 
 .sec::before {
   content: "";
-  height: 185px;
+  height: 190px;
   width: 4px;
   bottom: 69px;
   position: absolute;
   background-color: #c0392b;
-  /* z-index: 1000; */
+  border-radius: 50% 50% 0 0;
+  box-shadow: 2px 2px 6px black;
 }
