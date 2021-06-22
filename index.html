@@ -36,6 +36,29 @@
     </div>
   </div>
   <script src="engine.js"></script>
+  <script>
+    function toggleTheme() {
+      const className = document.querySelector(".clock");
+      const body = document.getElementsByTagName("body");
+      className.classList.toggle("light");
+      body[0].classList.toggle("bodyClass");
+      document.querySelector("nav").classList.toggle('navbar-light');
+      const navClass = document.getElementById("navID");
+      if (document.getElementsByTagName("input")[0].checked) {
+        if (navClass.classList.contains("light-nav light-text")) {
+          navClass.classList.remove("light-nav light-nav");
+        }
+        navClass.classList.toggle("navbar-dark bg-dark");
+      }
+      else {
+        if (navClass.classList.contains("navbar-dark bg-dark")) {
+          navClass.classList.remove("navbar-dark bg-dark");
+        }
+        navClass.classList.toggle("light-nav light-text ");
+      }
+
+    }
+  </script>
 </body>
 
 </html>
